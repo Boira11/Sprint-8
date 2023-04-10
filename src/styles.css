@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+/* Establecer el fondo en negro y el color de texto general en blanco */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Bungee', cursive;
+  }
+  
+  /* Aplicar un gradiente de amarillo a naranja a los títulos */
+  h1, h2, h3, h4, h5, h6 {
+    background-image: linear-gradient(to right, yellow, orange);
+   
+    color: black;
+    font-family: 'Bungee', cursive;
+  }
+  
+  /* Agregar estilo adicional para el título principal */
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: orange;
+  }
+
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .star-wars-button {
+    background-color: #FFE81F;
+    border: 2px solid #FFE81F;
+    color: #0F0F0F;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 2px 0 #0F0F0F;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+  }
+  
+  .star-wars-button:hover,
+  .star-wars-button:focus {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    color: #0F0F0F;
+    box-shadow: 0 2px 0 #0F0F0F;
+  }
+  
+  .star-wars-button:active {
+    background-color: #FFD700;
+    border-color: #FFD700;
+    box-shadow: none;
+    color: #0F0F0F;
+  }
+  

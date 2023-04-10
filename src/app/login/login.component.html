@@ -1,0 +1,20 @@
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <h2 class="text-center mb-4">Iniciar sesión</h2>
+        <form (ngSubmit)="onSubmit()" class="bg-light p-4 border rounded">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input [(ngModel)]="loginForm.email" name="email" type="email" class="form-control" id="email" placeholder="Introduce tu email" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña</label>
+            <input [(ngModel)]="loginForm.password" name="password" type="password" class="form-control" id="password" placeholder="Introduce tu contraseña" required>
+          </div>
+          <button type="submit" class="star-wars-button btn btn-primary btn-block">Iniciar sesión</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,60 @@
+<div class="container-fluid mt-4" *ngIf="starship">
+  <div >
+    <h2  class="text-center">{{ starship.name }}</h2>
+</div>
+<div class="text-center m-3">
+  <p>Model: {{ starship.model }}</p>
+    <p>Manufacturer: {{ starship.manufacturer }}</p>
+    <p>Cost in Credits: {{ starship.cost_in_credits }}</p>
+    <p>Length: {{ starship.length }}</p>
+    <p>Max Atmosphering Speed: {{ starship.max_atmosphering_speed }}</p>
+    <p>Crew: {{ starship.crew }}</p>
+    <p>Passengers: {{ starship.passengers }}</p>
+    <p>Cargo Capacity: {{ starship.cargo_capacity }}</p>
+    <p>Consumables: {{ starship.consumables }}</p>
+    <p>Hyperdrive Rating: {{ starship.hyperdrive_rating }}</p>
+    <p>MGLT: {{ starship.MGLT }}</p>
+    <p>Starship Class: {{ starship.starship_class }}</p>
+
+    <div>
+      <h3 class="text-center">PILOTOS</h3>
+    </div>
+    <div *ngIf="pilots && pilots.length > 0" >
+      <div class="container">
+        <div class="row justify-content-center">
+          <ng-container *ngFor="let pilot of pilots">
+            <div class="col-md-3">
+              <app-pilot-card [pilot]="pilot"></app-pilot-card>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="text-center">PELÍCULAS</h3>
+    </div>
+
+    <div *ngIf="movies && movies.length > 0">
+      <div class="container">
+        <div class="row justify-content-center">
+          <ng-container *ngFor="let movie of movies">
+            <div class="col-md-3">
+              <app-movie-card [movie]="movie"></app-movie-card>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+    
+
+
+  
+    <!-- Añade un botón para volver a la lista de naves -->
+    <button routerLink="/ships">Volver a la lista de naves</button>
+
+</div>
+    
+    
+  </div>
+  

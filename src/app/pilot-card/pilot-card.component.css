@@ -1,0 +1,17 @@
+.card {
+    margin: 1rem;
+    border: 2px solid #ffc107;
+  }
+  
+  .card-header {
+    background-color: #343a40;
+    border-bottom: 2px solid #ffc107;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+
+  .custom-card {
+    min-height: 400px;
+  }
